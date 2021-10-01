@@ -1,0 +1,104 @@
+// This is where your application styles could go.
+.container--homepage a {
+  text-decoration: none;
+}
+.container--homepage h2 a {
+  color: #49A3F8 !important;
+}
+.container--homepage a svg {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.container--homepage .bx--feature-card.homepage-feature .bx--aspect-ratio--object .bx--tile{
+  margin-left: 24.24%
+}
+.container--homepage .bx--feature-card.homepage-feature .bx--aspect-ratio--object .bx--tile,
+.container--homepage .bx--feature-card.homepage-feature .bx--aspect-ratio--object .bx--tile:hover, {
+  background-image: linear-gradient(to right, #357AF6, #357AF6, #9A5ACB) !important;
+}
+.container--homepage .bx--feature-card.homepage-feature .bx--aspect-ratio--2x1::before {
+  padding-top: 30%;
+}
+.container--homepage  > .bx--grid:nth-of-type(4) {
+  background-image: linear-gradient(to right, #357AF6, #357AF6, #9A5ACB) !important;
+}
+.container--homepage  > .bx--grid:nth-of-type(4) .Callout-module--firstColumn--W_mMf p {
+  max-width: 300px;
+}
+.container--homepage  > .bx--grid:nth-of-type(4) .Callout-module--firstColumn--W_mMf a {
+  text-decoration: underline;
+}
+.container--homepage .stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container--homepage .stats:first-of-type {
+  margin-top: 4rem;
+}
+.container--homepage .stats .percentage {
+  font-size: 64px;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+.container--homepage .stats .desc {
+  font-size: 1.5rem;
+}
+.container--homepage .bx--grid.Main-module--main--24PSV img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+.container--homepage .bx--grid.Main-module--main--24PSV p {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 42rem) {
+  .container--homepage .bx--feature-card.homepage-feature .bx--aspect-ratio--object .bx--tile{
+    margin-left: 0;
+  }
+  .container--homepage .Banner-module--grid--1aCPQ {
+    height: 100%;
+    max-height: none !important;
+  }
+  .container--homepage .bx--feature-card__link > .bx--row:nth-of-type(1) {
+    max-height: 500px;
+  }
+  .container--homepage > .bx--grid:nth-of-type(4) .Callout-module--firstColumn--W_mMf p {
+    max-width: none;
+  }
+}
+@media screen and (max-width: 28rem) {
+  .container--homepage .stats{
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 42rem) and (max-width: 58rem) {
+  .container--homepage h1 {
+    margin-bottom: 12rem;
+  }
+}
+@media screen and (min-width: 42rem) and (max-width: 66rem) {
+  .container--homepage  > .bx--grid:nth-of-type(4) .Callout-module--firstColumn--W_mMf p {
+    max-width: 90%;
+  }
+  .container--homepage .stats{
+    display: block;
+  }
+}
+
+.sidenav-list .bx--side-nav__item:nth-of-type(4) .bx--side-nav__link-text,
+.sidenav-list .bx--side-nav__item:nth-of-type(5) .bx--side-nav__link-text,
+.sidenav-list .bx--side-nav__item:nth-of-type(6) .bx--side-nav__link-text,
+.sidenav-list .bx--side-nav__item:nth-of-type(7) .bx--side-nav__link-text,
+.sidenav-list .bx--side-nav__item:nth-of-type(8) .bx--side-nav__link-text,
+.sidenav-list .bx--side-nav__item:nth-of-type(9) .bx--side-nav__link-text {
+  margin-left: 1rem;
+}

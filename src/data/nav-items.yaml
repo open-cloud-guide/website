@@ -1,0 +1,28 @@
+- title: About this guide
+  pages:
+    - path: /about
+- title: Definitions
+  pages:
+    - path: /definitions
+  hasDivider: true
+- title: Guides
+  pages:
+    - path: /guides
+- title: Artificial Intelligence
+  pages:
+    - path: /guides/ai
+- title: APIs
+  pages:
+    - path: /guides/apis
+- title: Big Data
+  pages:
+    - path: /guides/big-data
+- title: Containers
+  pages:
+    - path: /guides/containers
+- title: Databases
+  pages:
+    - path: /guides/databases
+- title: Teaming
+  pages:
+    - path: /guides/teaming
