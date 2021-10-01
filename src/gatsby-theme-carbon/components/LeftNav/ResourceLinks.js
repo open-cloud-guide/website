@@ -4,7 +4,7 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Github',
-    href: 'https://github.com/stevemar/open-source-cloud-guide-carbon',
+    href: 'https://github.com/open-cloud-guide/website',
   }
 ];
 

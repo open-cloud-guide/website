@@ -46,7 +46,7 @@ Create a PR!
 
 ## Where can I view the guide?
 
-<https://stevemar.github.io/open-source-cloud-guide-carbon>
+<https://open-cloud-guide.dev>
 
 ## Build locally
 
