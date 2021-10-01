@@ -3,45 +3,71 @@ title: APIs
 description: A guide for open source API services.
 ---
 
+# Exposing a service API
+
 ## Problem
 
-While building cloud applications you often discover that logic or data can and should be exposed as an API to be used by other applications or services. This is part of micro services architecture and engineering. Cloud services that would facilitate development and evolution of these service APIs include service API gateways that can limit or control API access, securing ingresses to services, in addition to ability to meter and charge for services.
+While building cloud applications one discovers that logic or data can and should be exposed as APIs to be used by other users, applications, APIs, or services. This is an integral part of a sound micro services architecture and engineering. 
+
+Hybrid cloud services that facilitate development and evolution of these service APIs include service API gateways that can limit or control API access, services to secure ingresses to services and APIs, tools and services to document and test APIs, in addition to the ability to meter and charge for APIs.
 
 ### Why is this Important for Hybrid Cloud Developers?
 
-1. Every developer needs to expose APIs. Open your services to the world. Each service might have multiple APIs that can be exposed. These APIs could be done to allow integration for external parties, or to allow integration with other applications that the same developer is implementing.
+There are many reasons why a micro service architecture should expose services APIs. We will list the top three reasons that come up in practice and are widely accepted.
 
-2. Serverless means pay only for what you use. The ideal situation for any developer is to pay for the exact resource consumed and be able to access unlimited resources as needed when scaling is a requirement. Open Serverless environment, such as those based on Knative, are a promising step in that direction. And because it's open it does not lock in and can be adapted to any cloud.
+1. Open your services to the world. Each service might have multiple APIs that can be exposed.
 
-3. Advanced API features now available as a service. When a developer exposes an API there are immediate concerns that she must address. For instance, how to meter the API, how to throttle and deal with rapid scale, how to secure all endpoints, and how to allow retries and other "corner cases". Many of these concerns are common across APIs and typically can be dealt with by common services by the cloud provider. For instance, an API Gateway. Is this a valid approach in a Hybrid cloud environment?
+2. Enable Serverless usage to means truly pay for what you use. The ideal situation for any developer is to pay for the exact cloud resources consumed and be able to access unlimited resources as needed when scaling is a requirement and when it is needed.
+
+3. Advanced API features are now available as a service and in many clouds. For instance, how to meter the API, how to throttle and deal with rapid scale, how to secure all endpoints, and how to allow retries and other "corner cases" that arises when using an API at scale.
 
 ## Solution Sketch
 
-* [solution or solution sketche(s)]
+In all approached to exposing APIs we can notice a common set of tasks and a common high-level architecture. The steps include figuring out what part of the service or application or data that needs to be exposed as a service. We call this API design. The output of this step is an Open API document listing the different endpoints, the methods exposed (i.e., POST, PUT, GET), the data structures in and out of these methods.
+
+Next comes generating the stubs and skeletons for the API document and connecting that to the backend code that will implement the API methods and consume and return the necessary data structures.
+
+Finally, is planning for non-functional attributes for the API and deployment. An API Gateway is an excellent means to achieve this last step. Many cloud providers have API Gateways readily available to use. However, you can deploy your own. Later we list example of these depending on the targeted cloud or open source projects you can use if you want to deploy your own.
 
 ### Constraints / Limitations
 
-* [limits to approach]
+* Serverless approached to API consumption is not in scope since we plan to cover the whole topic of serverless as its own guide.
+* Scaling applications, services, and APIs, at very large scle, is a topic that requires its own treatment. However, basic scaling, which is required by all APIs can be achieved by API Gateway.
+* Securing APIs is certainly in scope, however, there are advanced authentication and security and access control that are outside the scope and best provided as a separate service from the cloud provider or externally.
 
 ### Key OSS Techs
 
-* [important OSS technologies used]
+|  | Source code | Governing body |
+| - | - |
+|  | [Open APIs](https://www.openapis.org) | Linux Foundation|
+|  | [Swagger Hub](https://swagger.io) | [Smart Bear](https://smartbear.com) |
+|  | [Kong API Gateway](https://github.com/Kong/kong) | [Kong](https://konghq.com) |
+
 
 ### Example Cloud(s)
 
-* [at least two public clouds as examples]
-* [list services and features used for solutions]
+|  | Cloud | Key references |
+| - | - |
+|  | Azure | [API Management](https://azure.microsoft.com/en-us/services/api-management) |
+|  | IBM Cloud | [IBM API Connect](https://www.ibm.com/cloud/api-connect) |
+|  | Google Cloud | [Creating an API](https://cloud.google.com/api-gateway/docs/creating-api) |
 
 ## Where to Find More?
 
 ### Blogs
 
-* [list of related videos and articles]
+* [RESTful web API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+* [Best Practices in API Design](https://swagger.io/resources/articles/best-practices-in-api-design/
+* [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 
 ### Videos
 
-* [list of related videos]
+* [Kong Gateway: 3 Steps to Getting Started](https://youtu.be/F-YphLgKuz4)
+* [Service Connectivity for Mordern Architecture](https://youtu.be/kGZyAEVioWg)
+* [Swagger API documentation tutorial for beginners](https://youtu.be/7MS1Z_1c5CU)
 
 ### Tutorials
 
-* [list of related tutorials]
+* [OpenAPI 3.0 Tutorial](https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html)
+* [Swagger Hub 101: And introduction](https://swagger.io/blog/api-development/swaggerhub-101-ondemand-tutorial/)
+* [Kong Gateway for Beginners](https://konghq.com/videos/kong-gateway-for-beginners/)
