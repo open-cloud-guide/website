@@ -7,8 +7,7 @@ stages:
     if: branch = main
 
 script:
-  # Test a production build on PR builds and main merges
-  - yarn build:prefix
+  - yarn build
 
 deploy:
   provider: pages
