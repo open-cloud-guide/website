@@ -1,6 +1,6 @@
 # Open Source Cloud Guide
 
-A guide demonstrating how major cloud vendors use open source in their offerings
+A guide demonstrating the prevelance of open source in cloud providers.
 
 ## Mission statement
 
