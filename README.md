@@ -67,10 +67,8 @@ yarn clean; yarn dev
 Build the pages
 
 ```bash
-yarn build:prefix
+yarn build
 ```
-
-> NOTE: When deploying make use of gatby's `--prefix-paths` option by building with: `yarn build:prefix` as opposed to `yarn build`
 
 View the site, open a browser to `localhost:9000`.
 
