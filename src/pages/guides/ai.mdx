@@ -5,31 +5,24 @@ description: A guide for open source AI services
 
 ## What is artificial intelligence?
 
-_Give a brief description of what AI is and why developers need to know how to extend their cloud offerings with AI services. In other words, how does AI made cloud offerings better?_
+Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind. AI combines computer science and robust datasets to enable problem-solving. AI developers take the models that data scientists create and make them into deployable models that can be used in applications.
 
-Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind. AI combines computer science and robust datasets to enable problem-solving.  Integrating AI and machine learning technologies with cloud environments is an increasingly common scenario, driven by use of microservices and the need to scale rapidly. 
+## AI and the cloud
 
-AI developers take the models that data scientists create and make them into deployable models that can be used in applications. 
+Integrating AI and machine learning technologies with cloud environments is an increasingly common scenario, driven by use of microservices and the need to scale rapidly. Developers are faced with the challenge to not only build machine learning applications, but to ensure that they run well in production in cloud-native and hybrid cloud environments. 
 
-## Problems?
-
-Developers are faced with the challenge to not only build machine learning applications, but to ensure that they run well in production in cloud-native and hybrid cloud environments. 
-
-_EM:::::: This might be too much information but adding it for now:_
-
-Moving an application from a Jupyter notebook<!--EM: is all AI modeling done in Jupyter notebooks?--> to a production environment requires numerous components to work together. These components cover a wide range of tasks that developers and administrators have to manage, including microservices frameworks, code analysis support, monitoring/logging support, continuous integration, secure access to service credentials, UI components, DevOps pipeline, Kubernetes YAML files, manage API access to other business logic components, and so on.
-
-## How is AI related to hybrid cloud in general?
-
-I assume it's b/c teams can choose the cloud that works for their workloads/use cases and then extend their oferings with AI services. So those services need to work well with any cloud. But feel free to expand.
-
-![survey results](images/survey-ai.png)
+When developing AI services that will run in hybrid cloud and multicloud environments, the services must work well in any cloud environment. 
 
 ## Solution sketch
-Is there a standard architecture for incorporating AI services with a multicloud environment? Are there common tools or concepts inherent to this?
+
+When developing AI-powered services and applications that run in cloud environments, there is a vast array of development areas to consider including:
+
+- Machine learning libraries
+- Datasets
+- Data exchanges
+- Deep learning libraries
 
 ## Key open source projects 
-I think these are just filler ones, so feel free to expand. Ones with big, openly governed communities are best.
 
 * PyTorch
 * Tensorflow
@@ -37,18 +30,25 @@ I think these are just filler ones, so feel free to expand. Ones with big, openl
 * Spark
 * Keras
 
-### Machine learning model creation
-
-|  | Current release | Release date | Governing body |
+### Machine learning frameworks
+<!--EM: Not sure if this should be ML frameworks or libraries or machine learning model creation. LMK what you think -->
+|  | GitHub repo | Governing body | Get Started guide |
 | - | - | - | - |
-| [Tensoflow](https://podman.io/) | v.3.3.0 | 4 June 2018 | TBD |
+| [Tensorflow](https://www.tensorflow.org/) | [GH repo](https://github.com/tensorflow/tensorflow) | TBD | [TensorFlow Get Started](https://www.tensorflow.org/learn) |
+| [Keras](https://keras.io/) | [GH repo](https://github.com/keras-team/keras) | TBD | [Keras Get Started](https://keras.io/getting_started) |
+| [PyTorch](https://pytorch.org/) | [GH repo]https://github.com/pytorch/pytorch()  | TBD | https://pytorch.org/get-started/locally/ |
 
-### Data exchanges
-|  | Current release | Release date | Governing body |
-| - | - | - | - |
-| [Tensoflow](https://podman.io/) | v.3.3.0 | 4 June 2018 | TBD |
+### Datasets
+<!--EM: Or should this be maching learning exchanges? just data exchanges? I added MXL but then I started to wonder if we should drill down and do like actual data sets and actual machine learning exchanges--?
 
-### Deep learning model creation
-|  | Current release | Release date | Governing body |
+|  | GitHub repo | Governing body | Get Started guide |
 | - | - | - | - |
-| [Keras](https://podman.io/) | v.3.3.0 | 4 June 2018 | TBD |
+| [Machine Learning eXchange](https://ml-exchange.org/) | [GH repo](https://github.com/machine-learning-exchange/mlx) | LF AI & Data | [Get Started]() |
+
+### Deep learning libraries
+
+|  | GitHub repo | Governing body | Get Started guide |
+| - | - | - | - |
+| [Keras](https://podman.io/) | | TBD  | TBD |
+
+
