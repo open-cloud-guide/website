@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
     "dev:clean": "gatsby clean && gatsby develop -H 0.0.0.0",
-    "build": "yarn clean && gatsby build",
-    "build:clean": "yarn clean && gatsby build",
-    "build:prefix": "yarn clean && gatsby build --prefix-paths",
+    "build": "gatsby clean && gatsby build",
+    "build:clean": "gatsby clean && gatsby build",
+    "build:prefix": "gatsby clean && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
