@@ -1,50 +1,53 @@
 ---
 title: APIs
-description: A guide for open source API services.
+description: A guide for open source API services
 ---
 
 # Exposing a service API
 
-## Problem
-
-While building cloud applications one discovers that logic or data can and should be exposed as APIs to be used by other users, applications, APIs, or services. This is an integral part of a sound micro services architecture and engineering. 
+When building cloud applications, you need APIs to expose logic or data that other users, applications, APIs, or services can use. This is an integral part of a sound microservices architecture and engineering. 
 
 Hybrid cloud services that facilitate development and evolution of these service APIs include service API gateways that can limit or control API access, services to secure ingresses to services and APIs, tools and services to document and test APIs, in addition to the ability to meter and charge for APIs.
 
-### Why is this Important for Hybrid Cloud Developers?
+### Why is API exposure important to hybrid cloud developers?
 
-There are many reasons why a micro service architecture should expose services APIs. We will list the top three reasons that come up in practice and are widely accepted.
+There are many reasons why a microservices architecture should expose services APIs, including:
 
-1. Open your services to the world. Each service might have multiple APIs that can be exposed.
+1. APIs <!--EM: I put "APIs" here to be more clear, but did you mean a microservices architecture, instead?--> open your services to the world. Each service might have multiple APIs that can be exposed.
 
-2. Enable Serverless usage to means truly pay for what you use. The ideal situation for any developer is to pay for the exact cloud resources consumed and be able to access unlimited resources as needed when scaling is a requirement and when it is needed.
+2. Enable serverless usage so that customers can truly pay for what they use. For many companies, there is a desire to pay for the exact cloud resources consumed, while also being able to access unlimited cloud resources when scaling is required.
 
-3. Advanced API features are now available as a service and in many clouds. For instance, how to meter the API, how to throttle and deal with rapid scale, how to secure all endpoints, and how to allow retries and other "corner cases" that arises when using an API at scale.
+3. Advanced API features are now available as a service and in many clouds. For instance, specific services enable you to meter the API, to throttle and deal with rapid scale,to secure all endpoints, and to allow retries and other "corner cases" that arises when using an API at scale.
 
-## Solution Sketch
+## Solution sketch
 
-In all approached to exposing APIs we can notice a common set of tasks and a common high-level architecture. The steps include figuring out what part of the service or application or data that needs to be exposed as a service. We call this API design. The output of this step is an Open API document listing the different endpoints, the methods exposed (i.e., POST, PUT, GET), the data structures in and out of these methods.
+When exposing APIs, there is a common set of tasks and a common high-level architecture. The steps include figuring out what part of the service or application or data that needs to be exposed as a service. This is called *API design*. The output of this step is an Open API document listing the different endpoints, the methods exposed (i.e., POST, PUT, GET), and the data structures in and out of these methods.
 
-Next comes generating the stubs and skeletons for the API document and connecting that to the backend code that will implement the API methods and consume and return the necessary data structures.
+After the design phase, you need to generate the stubs and skeletons for the API document and connect that to the backend code that implements the API methods and consume and return the necessary data structures.
 
-Finally, is planning for non-functional attributes for the API and deployment. An API Gateway is an excellent means to achieve this last step. Many cloud providers have API Gateways readily available to use. However, you can deploy your own. Later we list example of these depending on the targeted cloud or open source projects you can use if you want to deploy your own.
+Finally, you need to plan for non-functional attributes for the API and deployment. An API Gateway is an excellent means to achieve this last step. Many cloud providers have API Gateways readily available to use. You can also deploy your own. The next sections highlight examples of these depending on the targeted cloud or open source projects you can use if you want to deploy your own.
 
-### Constraints / Limitations
+### Constraints and limitations
 
-* Serverless approached to API consumption is not in scope since we plan to cover the whole topic of serverless as its own guide.
-* Scaling applications, services, and APIs, at very large scle, is a topic that requires its own treatment. However, basic scaling, which is required by all APIs can be achieved by API Gateway.
+* Serverless approaches to API consumption is not in scope since we plan to cover the whole topic of serverless as its own guide.
+* Scaling applications, services, and APIs, at very large scale, is a topic that requires its own treatment. However, basic scaling, which is required by all APIs can be achieved by an API Gateway.
 * Securing APIs is certainly in scope, however, there are advanced authentication and security and access control that are outside the scope and best provided as a separate service from the cloud provider or externally.
 
-### Key OSS Techs
+### Key open source projects
+<!--EM: is tehre a logical way to categories these projects below? So like API Gateways, API management, API documentation, etc? Or are they all doing the same thing? I want to work LoopBack in -->
 
-|   | Source code | Governing body |
+## API documentation
+
+|   | Source code | Governing body | Get started |
 | - | - | - |
-|   | [Open APIs](https://www.openapis.org) | Linux Foundation|
+|   | [Open APIs](https://www.openapis.org) | Linux Foundation| [Documentation](https://oai.github.io/Documentation) |
 |   | [Swagger Hub](https://swagger.io) | [Smart Bear](https://smartbear.com) |
 |   | [Kong API Gateway](https://github.com/Kong/kong) | [Kong](https://konghq.com) |
 
 
 ### Example Cloud(s)
+
+<!--EM: What open source are these tools built on. I know IBM Connect is built on LoopBack, but do we now for AWS, Azure, or GC? And does AWS have an API service?-->
 
 |   | Cloud | Key references |
 | - | - | - |
@@ -52,7 +55,8 @@ Finally, is planning for non-functional attributes for the API and deployment. A
 |   | IBM Cloud | [IBM API Connect](https://www.ibm.com/cloud/api-connect) |
 |   | Google Cloud | [Creating an API](https://cloud.google.com/api-gateway/docs/creating-api) |
 
-## Where to Find More?
+
+## Additional resources
 
 ### Blogs
 
