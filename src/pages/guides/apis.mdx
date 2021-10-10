@@ -5,7 +5,7 @@ description: A guide for open source API services
 
 ## What are APIs?
 
-When building cloud applications, you need APIs to expose logic or data that other users, applications, APIs, or services can use. This is an integral part of a sound microservices architecture and engineering. 
+When building cloud applications, you need APIs to expose logic or data that other users, applications, APIs, or services can use. This is an integral part of a sound microservices architecture and engineering.
 
 Hybrid cloud services that facilitate development and evolution of these service APIs include service API gateways that can limit or control API access, services to secure ingresses to services and APIs, tools and services to document and test APIs, in addition to the ability to meter and charge for APIs.
 
@@ -13,7 +13,7 @@ Hybrid cloud services that facilitate development and evolution of these service
 
 There are many reasons why a microservices architecture should expose services APIs, including:
 
-1. APIs <!--EM: I put "APIs" here to be more clear, but did you mean a microservices architecture, instead?--> open your services to the world. Each service might have multiple APIs that can be exposed.
+1. APIs open your services to the world. Each service might have multiple APIs that can be exposed.
 
 2. Enable serverless usage so that customers can truly pay for what they use. For many companies, there is a desire to pay for the exact cloud resources consumed, while also being able to access unlimited cloud resources when scaling is required.
 
@@ -27,7 +27,7 @@ After the design phase, you need to generate the stubs and skeletons for the API
 
 Finally, you need to plan for non-functional attributes for the API and deployment. An API Gateway is an excellent means to achieve this last step. Many cloud providers have API Gateways readily available to use. You can also deploy your own. The next sections highlight examples of these depending on the targeted cloud or open source projects you can use if you want to deploy your own.
 
-### Constraints and limitations
+## Limitations
 
 * Serverless approaches to API consumption is not in scope since we plan to cover the whole topic of serverless as its own guide.
 * Scaling applications, services, and APIs, at very large scale, is a topic that requires its own treatment. However, basic scaling, which is required by all APIs can be achieved by an API Gateway.
@@ -37,22 +37,22 @@ Finally, you need to plan for non-functional attributes for the API and deployme
 
 TBD
 
-## API specifications
+### API specifications
 
 |   | Code | Governing body | Get started |
 | - | - | - | - |
-| [Open APIs](https://www.openapis.org)  | N/A | Linux Foundation| [Documentation](https://oai.github.io/Documentation) | 
+| [Open APIs](https://www.openapis.org)  | N/A | Linux Foundation| [Documentation](https://oai.github.io/Documentation) |
 | [Swagger Editor](https://swagger.io/tools/swagger-editor/)  |  [GitHub repo](https://github.com/swagger-api/swagger-editor) | [Smart Bear](https://smartbear.com) | [Get started](https://editor.swagger.io/) |
 | [AsyncAPI Initiative](https://www.asyncapi.com/) | [Async API Playground](https://playground.asyncapi.io/?load=https://raw.githubusercontent.com/asyncapi/asyncapi/v2.1.0/examples/simple.yml) | Linux Foundation| [Documentation](https://www.asyncapi.com/docs/getting-started)|
 
-## API development and management
+### API development and management
 
 |   | GitHub repo | Governing body | Get started |
 | - | - | - | - |
 | [Kong API Gateway](https://konghq.com/)  | [GitHub repo](https://github.com/Kong/kong) | N/A) | [Get started video](https://konghq.com/videos/kong-gateway-for-beginners) |
 | [LoopBack](https://loopback.io/) | [GitHub repo](https://github.com/loopbackio/loopback-next) | OpenJS Foundation | [Getting started](https://loopback.io/getting-started.html) |
 
-### Example Cloud(s)
+## Cloud comparision
 
 |   | Cloud | Key references |
 | - | - | - |
