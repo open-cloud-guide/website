@@ -15,6 +15,6 @@ const links = {
 };
 
 // remove the IBM logo
-const CustomFooter = () => <Footer links={links} Content={Content} Logo="Blah"/>;
+const CustomFooter = () => <Footer links={links} Content={Content} Logo="None"/>;
 
 export default CustomFooter;
