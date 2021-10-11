@@ -33,7 +33,6 @@ Update the following pages:
 * [Big Data](src/pages/guides/big-data.mdx)
 * [Containers](src/pages/guides/containers.mdx)
 * [Databases](src/pages/guides/databases.mdx)
-* [Teaming](src/pages/guides/teaming.mdx)
 
 ## How do I contribute?
 
