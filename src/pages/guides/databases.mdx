@@ -5,43 +5,65 @@ description: A guide for open source database services.
 
 ## What are databases?
 
-Databases store data.
+A database is an organized collection of data. As databases become more complex they are often developed using formal design and modeling techniques. Databases may be classified into two different types: Relational, where the data is modeled as rows and columns in a series of tables and use SQL for writing and querying data; and non-relational, or NoSQL databases, which contains subgroups such as Document databases and key-value databases. [1](https://en.wikipedia.org/wiki/Database)
 
 ## Why is this important for hybrid cloud developers?
 
-TBD
+Where traditional relational databases worked well for general purpose use cases, NoSQL databases took advantage of the elasticity and scalability offered by cloud computing.
+
 
 ## Solution Sketch
 
-* [solution or solution sketche(s)]
-
-(batch data processing with Spark; real-time data processing with Kafka; data catalog)
+* Document databases: general purpose
+* Key-value: large amounts of data with simple lookup queries
+* Graph: analyzing and traversing relationships between connected data
 
 ## Limitations
 
-* [limits to approach]
+* TBD
 
 ## Key open source projects
 
-* MySQL
-* MongoDB
+### SQL
+
+| Project | Code | Get started |
+| - | - | - | - |
+| [PostgreSQL](https://www.postgresql.org) | [GitHub repo](https://github.com/postgres/postgres) | [Documentation](https://www.postgresql.org/docs)|
+| [MariaDB](https://mariadb.org) | [GitHub repo](https://github.com/MariaDB/server) | [Documentation](https://mariadb.org/documentation)|
+| [CoackroachDB](https://www.cockroachlabs.com) | [GitHub repo](https://github.com/cockroachdb/cockroach) | [Documentation](https://www.cockroachlabs.com/docs/stable)|
+
+
+### Document
+
+| Project | Code | Get started |
+| - | - | - | - |
+| [Cassandra](https://cassandra.apache.org/) | [GitHub repo](https://github.com/apache/cassandra) | [Get started](https://cassandra.apache.org/_/quickstart.html) |
+| [CouchDB](https://couchdb.apache.org/) | [GitHub repo](https://github.com/apache/couchdb) | [Documentation](https://docs.couchdb.org/)|
+| [MongoDB](https://www.mongodb.com/) | [GitHub repo](https://github.com/mongodb/mongo) | [Documentation](https://docs.mongodb.com/) |
+
+### Key-value
+
+| Project | Code | Get started |
+| - | - | - | - |
+| [etcd](https://etcd.io) | [GitHub repo](https://github.com/etcd-io/etcd) | [Documentation](https://etcd.io/docs/)|
+| [Redis](https://redis.io) | [GitHub repo](https://github.com/redis/redis) | [Documentation](https://redis.io/documentation)|
 
 ## Cloud comparision
 
-| IBM Cloud | GCP | AWS | Azure |
-| - | - | - | - |
-| Cloudant | MySQL | RDB | SQL |
+| Type | IBM Cloud | GCP | AWS | Azure |
+| - | - | - | - | - |
+| SQL | [PostgreSQL](https://cloud.ibm.com/databases/databases-for-postgresql/create) | [PostgreSQL](https://cloud.google.com/sql/postgresql) | [Aurora](https://aws.amazon.com/rds/aurora) | [PostgreSQL](https://azure.microsoft.com/en-ca/services/postgresql/) |
+| | | | [RDS](https://aws.amazon.com/rds/) | [MariaDB](https://azure.microsoft.com/en-ca/services/mariadb//) |
+| | | [MySQL](https://cloud.google.com/sql/mysql) | | [MySQL](https://azure.microsoft.com/en-ca/services/mysql/) |
+| Document | [Cloudant](https://cloud.ibm.com/catalog/services/cloudant) | [Firestore](https://cloud.google.com/firestore) | | [Cosmos](https://azure.microsoft.com/en-ca/services/cosmos-db/) |
+|  | [Cassandra](https://cloud.ibm.com/databases/databases-for-cassandra/create) | | |  |
+|  | [MongoDB](https://cloud.ibm.com/databases/databases-for-mongodb/create) | | [DocumentDB](https://aws.amazon.com/documentdb/) | |
+| Key-value | [etcd](https://cloud.ibm.com/databases/databases-for-etcd/create) | | [DynamoDB](https://aws.amazon.com/dynamodb/) | |
+|  | [Redis](https://cloud.ibm.com/databases/databases-for-redis/create) | | [MemoryDB for Redis](https://aws.amazon.com/memorydb/) | [Cache for Redis](https://azure.microsoft.com/en-ca/services/cache/) |
 
 ## Additional resources
 
 ### Blogs
 
-* [list of related videos and articles]
-
-### Videos
-
-* [list of related videos]
-
-### Tutorials
-
-* [list of related tutorials]
+* [What is NoSQL? | IBM Cloud Learn Hub](https://www.ibm.com/cloud/learn/nosql-databases)
+* [When to use NoSQL? | MongoDB](https://www.mongodb.com/nosql-explained/when-to-use-nosql)
