@@ -15,70 +15,68 @@ Integrating AI and machine learning technologies with cloud environments is an i
 
 When developing AI-powered services and applications that run in cloud environments, there is a vast array of development areas to consider including:
 
-* Datasets
-* Work with Data: Wrangling, Cleaning, Analysis, and Computation
-* Data Visualization
-* Model Development
-* Model Deployment
+* Which datasets to use
+* The best way to wrangle, clena, analyze, and compute data
+* Data visualization
+* Model development
+* Model deployment
 
 ## Limitations
 
-* **Overfitting**: Overfitting is a concept in data science, which occurs when a statistical model fits exactly against its training data. When this happens, the algorithm unfortunately cannot perform accurately against unseen data, defeating its purpose.
+* **Overfitting**: Overfitting is a concept in data science which occurs when a statistical model fits exactly against its training data. When this happens, the algorithm unfortunately cannot perform accurately against the unseen data, defeating its purpose.
 
 ## Key open source projects
 
-### Datasets
+### Open datasets
 
 <InlineNotification kind="info">
 
-**Note:** For more information about open source licenses refer to ["Licenses and Standards"](https://opensource.org/licenses).
+**Note:** For more information about open source licenses, refer to ["Licenses and Standards"](https://opensource.org/licenses).
 
 </InlineNotification>
 
-| Source | GitHub Repo |
-| - | - |
-| [Project CodeNet](https://github.com/IBM/Project_CodeNet) | [Source](https://github.com/IBM/Project_CodeNet)
-| [Registry of Open Data on AWS](https://registry.opendata.aws/) | [Source](https://github.com/awslabs/open-data-registry/)|
-| [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets) | [Source](https://github.com/awesomedata/awesome-public-datasets) |
-| [World Bank Open Data](https://data.worldbank.org/) | |
-| [WHO Open Data](https://www.who.int/data/gho/) | |
-| [Google Public Data Explorer](https://www.google.com/publicdata/directory) | |
-| [European Union Open Data Portal](http://open-data.europa.eu/en/data/) | |
-| [U.S.Census Bureau](http://www.census.gov/data.html) | |
-| [Data.gov](https://www.data.gov/) | |
-| [Yelp Open Dataset](https://www.yelp.com/dataset) | |
-| [UNICEF](https://data.unicef.org/) | |
+| Source | APIs | Description |
+| - | - | - |
+| [Project CodeNet](https://ml-exchange.org/datasets/codenet-langclass) | N/A | Large-scale dataset with approximately 14 million code samples, each of which is an intended solution to one of 4000 coding problems |
+| [Registry of Open Data on AWS](https://registry.opendata.aws/) | N/A | Discover and share datasets that are available via AWS resources. |
+| [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets) | N/A | A high quality list of topic-centric public data sources |
+| [World Bank Open Data](https://data.worldbank.org/) | [World Bank Data Open API](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589) | Free and open access to global development data |
+| [WHO Open Data](https://www.who.int/data/gho/) | [GHO OData API](https://www.who.int/data/gho/info/gho-odata-api) | World Health Organization's gateway to health-related statistics for its 194 Member States |
+| [Google Public Data Explorer](https://www.google.com/publicdata/directory) | N/A | Large datasets that are easy to explore, visualize and communicate |
+| [U.S.Census Bureau](http://www.census.gov/data.html) | [Microdata API](https://www.census.gov/data/developers/data-sets/census-microdata-api.html) | The leading source of quality data about the United States' people and economy |
+| [Data.gov](https://www.data.gov/) | [Data.gov CKAN API](https://www.data.gov/developers/apis) | Data, tools, and resources to conduct research, develop web and mobile applications, design data visualizations, and more |
+| [Yelp Open Dataset](https://www.yelp.com/dataset) | N/A | Subset of Yelp's businesses, reviews, and user data for use in personal, educational, and academic purposes |
+| [UNICEF](https://data.unicef.org/) | N/A | World’s leading source of data on children with databases of hundreds of international valid and comparable indicators |
 
-### Work with Data - Wrangling, Cleaning, Analysis, Computation
+### Work with data - Wrangling, Cleaning, Analyzing, Computing
+
+| Name | Description | GitHub repo | Get Started guide |
+| - | - | - | - |
+| [Pandas](https://pandas.pydata.org/) | A fast, powerful, flexible and easy to use open source data analysis and manipulation tool built on Pythong | [Source](https://github.com/pandas-dev/pandas/) | [Guide](https://pandas.pydata.org/docs/) |
+| [NumPy](https://numpy.org/) | An open source project that enables numerical computing with Python | [Source](https://github.com/numpy) | [Guide](https://numpy.org/doc/stable/) |
+| [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) | A Python library designed for quick turnaround projects like screen-scraping | [Source](https://code.launchpad.net/beautifulsoup) | [Guide](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) |
+
+### Data visualization
+
+| Name | Description | GitHub Repo | Get Started guide |
+| - | - | - |
+| [Matplotlib](https://matplotlib.org/) | Comprehensive library for creating static, animated, and interactive visualizations in Python | [Source](https://github.com/matplotlib/matplotlib/) |[Guide](https://matplotlib.org/stable/contents.html) |
+| [Seaborn](https://seaborn.pydata.org/) | High-level interface for drawing attractive and informative statistical graphics | [Source](https://github.com/seaborn) | [Guide](https://seaborn.pydata.org/tutorial.html) |
+| [Plotly](https://plotly.com/python/) | A Python graphing library that makes interactive, publication-quality graphs | [Source](https://github.com/plotly/plotly.py) | [Guide](https://plotly.com/python/getting-started/) |
+| [Bokeh](http://docs.bokeh.org/en/latest/) | Python library for creating interactive visualizations for modern web browsers | [Source](https://github.com/bokeh/bokeh) | [Guide](http://docs.bokeh.org/en/latest/docs/user_guide.html)
+
+
+### Model development
 
 | Name | GitHub Repo | Get Started guide |
 | - | - | - |
-| [Pandas](https://pandas.pydata.org/) | [Source](https://github.com/pandas-dev/pandas/) | [Guide](https://pandas.pydata.org/docs/) |
-| [NumPy](https://numpy.org/) | [Source](https://github.com/numpy) | [Guide](https://numpy.org/doc/stable/) |
-| [SciPy](https://www.scipy.org/) | [Source](https://github.com/scipy/scipy) | [Guide](https://www.scipy.org/docs.html) |
-| [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) | [Source](https://code.launchpad.net/beautifulsoup) | [Guide](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) |
-
-### Data Visualization
-
-| Name | GitHub Repo | Get Started guide |
-| - | - | - |
-| [Matplotlib](https://matplotlib.org/) | [Source](https://github.com/matplotlib/matplotlib/) |[Guide](https://matplotlib.org/stable/contents.html) |
-| [Seaborn](https://seaborn.pydata.org/) | [Source](https://github.com/seaborn) | [Guide](https://seaborn.pydata.org/tutorial.html) |
-| [Plotly](https://plotly.com/python/) | [Source](https://github.com/plotly/plotly.py) | [Guide](https://plotly.com/python/getting-started/) |
-| [Bokeh](http://docs.bokeh.org/en/latest/) | [Source](https://github.com/bokeh/bokeh) | [Guide](http://docs.bokeh.org/en/latest/docs/user_guide.html)
-
-
-### Model Development
-
-| Name | GitHub Repo | Get Started guide |
-| - | - | - |
-| [Tensorflow](https://www.tensorflow.org/) | [Source](https://github.com/tensorflow/tensorflow) | [TensorFlow Get Started](https://www.tensorflow.org/learn) |
-| [Keras](https://keras.io/) | [Source](https://github.com/keras-team/keras) | [Keras Get Started](https://keras.io/getting_started) |
-| [PyTorch](https://pytorch.org/) | [Source](https://github.com/pytorch/pytorch) | [PyTorch Get Started](https://pytorch.org/get-started/locally/) |
-| [NLTK](https://www.nltk.org/) | [Source](https://github.com/nltk/nltk) | [Guide](https://www.nltk.org/api/nltk.html) |
-| [Gensim](https://radimrehurek.com/gensim/) | [Source](https://github.com/RaRe-Technologies/gensim) | [Guide](https://radimrehurek.com/gensim/auto_examples/index.html#documentation) |
-| [Scikit-Learn](https://scikit-learn.org/stable/) | [Source](https://github.com/scikit-learn/scikit-learn) | [Guide](https://scikit-learn.org/stable/getting_started.html)|
-| [Statsmodels](https://www.statsmodels.org/stable/index.html) | [Source](https://github.com/statsmodels/statsmodels) | [Guide](https://www.statsmodels.org/stable/gettingstarted.html) |
+| [Tensorflow](https://www.tensorflow.org/) | The core open source library to help you develop and train ML models | [Source](https://github.com/tensorflow/tensorflow) | [TensorFlow Get Started](https://www.tensorflow.org/learn) |
+| [Keras](https://keras.io/) | A deep learning API written in Python, that enables fast experimentation | [Source](https://github.com/keras-team/keras) | [Keras Get Started](https://keras.io/getting_started) |
+| [PyTorch](https://pytorch.org/) | A machine learning framework that accelerates the path from research prototyping to production deployment | [Source](https://github.com/pytorch/pytorch) | [PyTorch Get Started](https://pytorch.org/get-started/locally/) |
+| [NLTK](https://www.nltk.org/) | A platform for building Python programs to work with human language data | [Source](https://github.com/nltk/nltk) | [Guide](https://www.nltk.org/api/nltk.html) |
+| [Gensim](https://radimrehurek.com/gensim/) | Python library for process raw, unstructured digital texts | [Source](https://github.com/RaRe-Technologies/gensim) | [Guide](https://radimrehurek.com/gensim/auto_examples/index.html#documentation) |
+| [Scikit-Learn](https://scikit-learn.org/stable/) | Simple and efficient tools for predictive data analysis | [Source](https://github.com/scikit-learn/scikit-learn) | [Guide](https://scikit-learn.org/stable/getting_started.html)|
+| [Statsmodels](https://www.statsmodels.org/stable/index.html) | Python module that provides classes and functions for the estimation of many different statistical models | [Source](https://github.com/statsmodels/statsmodels) | [Guide](https://www.statsmodels.org/stable/gettingstarted.html) |
 
 ## Cloud comparision
 
@@ -95,3 +93,6 @@ When developing AI-powered services and applications that run in cloud environme
 ### Courses
 
 * [AI For Everyone | Coursera](https://www.coursera.org/learn/ai-for-everyone)
+* [Deep Learning Specialization | Coursera](https://www.coursera.org/specializations/deep-learning)
+* [Maching Learning with Python | Coursera](https://www.coursera.org/learn/machine-learning-with-python)
+* [Machin Learning for Coders | Fast.ai](https://course18.fast.ai/ml)
