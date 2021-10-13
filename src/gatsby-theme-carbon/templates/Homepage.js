@@ -23,7 +23,7 @@ const FirstRightText = () => (
 const SecondLeftText = () => (
   <>
   <h3>Survey says ...</h3><br></br>
-  <p>According to our <strong>O'Reilly Survey</strong>, Developers who want to develop cloud applications should work on honing their OSS skills (which underly every major cloud platform) instead of only focusing on building skills for a proprietary cloud.</p>
+  <p>According to a 2021 <strong>O'Reilly Survey</strong>, developers who want to develop cloud applications should work on honing their skills around the open source tools that underly every major cloud platform instead of only focusing on building skills for a proprietary cloud.</p>
   <a className={calloutLink}
       href="https://developer.ibm.com/blogs/oreilly-open-source-skill-survey-blog">
       Read the full survey
@@ -51,7 +51,7 @@ const customProps = {
       <FeatureCard
         color="dark"
         href="/about"
-        title="Start the guide"
+        title="Read the guides"
         subTitle="Ready to roll?"
         actionIcon="arrowRight"
         className="homepage-feature"
