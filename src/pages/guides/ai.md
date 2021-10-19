@@ -74,12 +74,12 @@ When developing AI-powered services and applications that run in cloud environme
 | [Plotly](https://plotly.com/python/) | A Python graphing library that makes interactive, publication-quality graphs | [Source](https://github.com/plotly/plotly.py) | [Guide](https://plotly.com/python/getting-started/) |
 | [Bokeh](http://docs.bokeh.org/en/latest/) | Python library for creating interactive visualizations for modern web browsers | [Source](https://github.com/bokeh/bokeh) | [Guide](http://docs.bokeh.org/en/latest/docs/user_guide.html)
 
-
 ### Model development
 
 | Name | Description | GitHub Repo | Get Started guide |
 | - | - | - | - |
 | [Scikit-Learn](https://scikit-learn.org/stable/) | Simple and efficient tools for predictive data analysis | [Source](https://github.com/scikit-learn/scikit-learn) | [Guide](https://scikit-learn.org/stable/getting_started.html)|
+| [XGBoost](https://xgboost.ai) | Otimized distributed gradient boosting library designed to be highly efficient, flexible and portable. | [Source](https://github.com/dmlc/xgboost) | [Guide](https://xgboost.readthedocs.io/en/latest/)|
 | [Tensorflow](https://www.tensorflow.org/) | The core open source library to help you develop and train ML models | [Source](https://github.com/tensorflow/tensorflow) | [TensorFlow Get Started](https://www.tensorflow.org/learn) |
 | [Keras](https://keras.io/) | A deep learning API written in Python, that enables fast experimentation | [Source](https://github.com/keras-team/keras) | [Keras Get Started](https://keras.io/getting_started) |
 | [PyTorch](https://pytorch.org/) | A machine learning framework that accelerates the path from research prototyping to production deployment | [Source](https://github.com/pytorch/pytorch) | [PyTorch Get Started](https://pytorch.org/get-started/locally/) |
@@ -87,6 +87,15 @@ When developing AI-powered services and applications that run in cloud environme
 | [NLTK](https://www.nltk.org/) | A platform for building Python programs to work with human language data | [Source](https://github.com/nltk/nltk) | [Guide](https://www.nltk.org/api/nltk.html) |
 | [Gensim](https://radimrehurek.com/gensim/) | Python library for process raw, unstructured digital texts | [Source](https://github.com/RaRe-Technologies/gensim) | [Guide](https://radimrehurek.com/gensim/auto_examples/index.html#documentation) |
 | [Statsmodels](https://www.statsmodels.org/stable/index.html) | Python module that provides classes and functions for the estimation of many different statistical models | [Source](https://github.com/statsmodels/statsmodels) | [Guide](https://www.statsmodels.org/stable/gettingstarted.html) |
+
+### Model deployment
+
+| Name | Description | GitHub Repo | Get Started guide |
+| - | - | - | - |
+| [Kubeflow](https://www.kubeflow.org) | The Kubeflow project is dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable.  | [Source](https://github.com/kubeflow/) | [Guide](https://www.kubeflow.org/docs/)|
+| [TensorFlow Extended](https://www.tensorflow.org) | TensorFlow Extended is an end-to-end platform for preparing data, training, validating, and deploying models in large production environments.| [Source](https://github.com/tensorflow/tfx) | [Guide](https://www.tensorflow.org/tfx/guide)|
+| [MLflow](https://mlflow.org) | MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry. | [Source](https://github.com/mlflow/mlflow/) | [Guide](https://mlflow.org/docs/latest/index.html)|
+
 
 ## Cloud comparision
 
@@ -99,6 +108,7 @@ When developing AI-powered services and applications that run in cloud environme
 ### Blogs
 
 * [What is AI? | IBM Cloud Learn Hub](https://www.ibm.com/cloud/learn/what-is-artificial-intelligence)
+* [Build robust machine learning-based solutions](https://developer.ibm.com/articles/what-is-machine-learning/)
 
 ### Courses
 
