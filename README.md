@@ -1,5 +1,7 @@
 # Open Source Cloud Guide
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6151052f-1219-400a-88e1-369872242879/deploy-status)](https://app.netlify.com/sites/eager-kare-f8ae88/deploys)
+
 A guide demonstrating the prevelance of open source in cloud providers.
 
 ## Mission statement
