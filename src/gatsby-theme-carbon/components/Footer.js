@@ -11,7 +11,8 @@ const Content = ({ buildTime }) => (
 
 const links = {
   firstCol: [
-    { href: 'https://github.com/open-cloud-guide/website', linkText: 'GitHub' }  ]
+    { href: 'https://github.com/open-cloud-guide/website', linkText: 'GitHub' },
+    { href: 'https://netlify.com/', linkText: 'Hosted with Netlify' }]
 };
 
 // remove the IBM logo
