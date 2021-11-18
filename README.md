@@ -51,11 +51,27 @@ Create a PR!
 
 Requirement:
 
-* Node v14 (will not work on later versions)
+* Node v14 (will **not work** on later versions)
 
 > NOTE: You can use [n](https://www.npmjs.com/package/n) to switch between Node versions.
 
-Clean files and build with dev mode. Open a browser to `localhost:8000`.
+Clean files and build with dev mode. Open a browser to <http://localhost:8000>.
+
+You can install `yarn`, `n`, and `gatsby` via [homebrew](https://brew.sh) on a Mac.
+
+```bash
+brew install n yarn gatsby-cli
+```
+
+For an initial setup and run you can run these following commands:
+
+```bash
+n install 14
+npm install
+yarn clean; yarn dev
+```
+
+After the first time you can just run:
 
 ```bash
 yarn clean; yarn dev
@@ -69,7 +85,7 @@ Build the pages
 yarn build
 ```
 
-View the site, open a browser to `localhost:9000`.
+View the site, open a browser to <http://localhost:9000>.
 
 ```bash
 yarn serve
